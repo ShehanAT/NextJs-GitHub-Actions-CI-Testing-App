@@ -84,6 +84,8 @@ const reducer = (state: State, action: Action): State => {
         ...state,
         isError: action.payload
       };
+    default:
+      return { ...state };
   }
 }
 
