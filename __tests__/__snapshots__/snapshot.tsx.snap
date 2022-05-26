@@ -114,3 +114,101 @@ exports[`renders homepage unchanged 1`] = `
   </div>
 </div>
 `;
+
+exports[`renders login page unchanged 1`] = `
+<div>
+  <form
+    autocomplete="off"
+    class="makeStyles-container-1"
+    novalidate=""
+  >
+    <div
+      class="MuiPaper-root MuiCard-root makeStyles-card-4 MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <div
+        class="MuiCardHeader-root makeStyles-header-3"
+      >
+        <div
+          class="MuiCardHeader-content"
+        >
+          <span
+            class="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+          >
+            Login App
+          </span>
+        </div>
+      </div>
+      <div
+        class="MuiCardContent-root"
+      >
+        <div>
+          <div
+            class="MuiFormControl-root MuiTextField-root MuiFormControl-marginNormal MuiFormControl-fullWidth"
+          >
+            <label
+              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+              data-shrink="false"
+              for="username"
+              id="username-label"
+            >
+              Username
+            </label>
+            <div
+              class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl"
+            >
+              <input
+                aria-invalid="false"
+                class="MuiInputBase-input MuiInput-input"
+                id="username"
+                placeholder="Username"
+                type="email"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            class="MuiFormControl-root MuiTextField-root MuiFormControl-marginNormal MuiFormControl-fullWidth"
+          >
+            <label
+              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+              data-shrink="false"
+              for="password"
+              id="password-label"
+            >
+              Password
+            </label>
+            <div
+              class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl"
+            >
+              <input
+                aria-invalid="false"
+                class="MuiInputBase-input MuiInput-input"
+                id="password"
+                placeholder="Password"
+                type="password"
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiCardActions-root MuiCardActions-spacing"
+      >
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-loginBtn-2 MuiButton-containedSecondary MuiButton-containedSizeLarge MuiButton-sizeLarge Mui-disabled Mui-disabled"
+          disabled=""
+          tabindex="-1"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            Login
+          </span>
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
+`;

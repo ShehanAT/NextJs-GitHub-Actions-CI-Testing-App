@@ -4,8 +4,7 @@ import Image from 'next/image'
 import styles from '@/pages/index.module.css'
 
 export default function Home() {
-  // {styles.container}
-  // {styles.title}
+
   return (
     <div className="container">
     
