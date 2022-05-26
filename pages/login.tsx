@@ -36,7 +36,6 @@ const useStyles = makeStyles((theme: Theme) =>
 type State = {
     username: string
     password:  string
-    isButtonDisabled: boolean
     helperText: string
     isError: boolean
 };
@@ -44,7 +43,6 @@ type State = {
 const initialState:State = {
     username: '',
     password: '',
-    isButtonDisabled: true,
     helperText: '',
     isError: false
 };
@@ -68,11 +66,6 @@ const reducer = (state: State, action: Action): State => {
       return {
         ...state,
         password: action.payload
-      };
-    case 'setIsButtonDisabled': 
-      return {
-        ...state,
-        isButtonDisabled: action.payload
       };
     case 'loginSuccess': 
       return {
@@ -131,7 +124,7 @@ const Login = () => {
 
     const handleKeyPress = (event: React.KeyboardEvent) => {
         if (event.keyCode === 13 || event.which === 13) {
-          state.isButtonDisabled || handleLogin();
+          handleLogin();
         }
     };
 
@@ -173,7 +166,7 @@ const Login = () => {
               color="secondary"
               className={classes.loginBtn}
               onClick={handleLogin}
-              disabled={state.isButtonDisabled}>
+              role="login-button">
               Login
             </Button>
           </CardActions>

@@ -47,6 +47,14 @@ describe('Login', () => {
 
     expect(passwordField).toBeInTheDocument()
   })
+
+  it('renders the Submit Button', () => {
+    render(<Login />)
+
+    const submitButton = screen.getByRole("login-button");
+
+    expect(submitButton).toBeInTheDocument()
+  })
 })
 
 

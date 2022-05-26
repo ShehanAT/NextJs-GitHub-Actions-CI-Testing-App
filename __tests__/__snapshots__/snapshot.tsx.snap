@@ -196,9 +196,9 @@ exports[`renders login page unchanged 1`] = `
         class="MuiCardActions-root MuiCardActions-spacing"
       >
         <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-loginBtn-2 MuiButton-containedSecondary MuiButton-containedSizeLarge MuiButton-sizeLarge Mui-disabled Mui-disabled"
-          disabled=""
-          tabindex="-1"
+          class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-loginBtn-2 MuiButton-containedSecondary MuiButton-containedSizeLarge MuiButton-sizeLarge"
+          role="login-button"
+          tabindex="0"
           type="button"
         >
           <span
@@ -206,6 +206,9 @@ exports[`renders login page unchanged 1`] = `
           >
             Login
           </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
         </button>
       </div>
     </div>
