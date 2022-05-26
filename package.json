@@ -9,9 +9,11 @@
   },
   "dependencies": {
     "@material-ui/core": "^4.12.4",
+    "formik": "^2.2.9",
     "next": "latest",
     "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "react-dom": "^18.1.0",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "5.16.4",

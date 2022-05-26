@@ -1,8 +1,9 @@
 import { render, screen } from '@testing-library/react'
 import Home from '@/pages/index'
 import Login from '@/pages/login'
+import Register from '@/pages/registration'
 
-describe('Home', () => {
+describe('Homepage', () => {
   it('renders a heading', () => {
     render(<Home />)
 
@@ -15,7 +16,7 @@ describe('Home', () => {
 })
 
 
-describe('Login', () => {
+describe('Login page', () => {
   it('renders the Login App title', () => {
     render(<Login />)
 
@@ -55,6 +56,48 @@ describe('Login', () => {
 
     expect(submitButton).toBeInTheDocument()
   })
-}) 
+});
+
+describe('Register page', () => {
+  it('renders the Registration title', () => {
+    render(<Register />)
+
+    const heading = screen.getByText("Registration Page");
+
+    expect(heading).toBeInTheDocument()
+  })
+
+  it('renders the Username Field', () => {
+    render(<Register />)
+
+    const usernameField = screen.getByRole("username-field");
+
+    expect(usernameField).toBeInTheDocument()
+  })
+
+  it('renders the Email Field', () => {
+    render(<Register />)
+
+    const emailField = screen.getByRole("email-field");
+
+    expect(emailField).toBeInTheDocument()
+  })
+
+  it('renders the Password Field', () => {
+    render(<Register />)
+
+    const passwordField = screen.getByRole("password-field");
+
+    expect(passwordField).toBeInTheDocument()
+  })
+
+  it('renders the Submit Button', () => {
+    render(<Register />)
+
+    const submitButton = screen.getByText("Sign Up");
+
+    expect(submitButton).toBeInTheDocument()
+  })
+});
 
 
